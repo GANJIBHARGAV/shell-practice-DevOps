@@ -8,7 +8,7 @@ else
 echo "Super.. under the root user only"
 fi
 
-dnf install mysqlhvgjcg -y
+dnf install mysql -y
 if [ $? -eq 0 ]
 then 
 echo "Installing mySQL... SUCESSS"
