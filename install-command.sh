@@ -7,3 +7,12 @@ exit 1
 else
 echo "Super.. under the root user only"
 fi
+
+dnf install mysqlhvgjcg -y
+if [ $? -eq 0 ]
+then 
+echo "Installing mySQL... SUCESSS"
+else
+echo "Installing mySQL... FAILURE"
+exit 1
+fi
