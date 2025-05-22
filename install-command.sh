@@ -8,11 +8,22 @@ else
 echo "Super.. under the root user only"
 fi
 
+dnf list installed mysql
+if [ $? -ne 0 ]
+then 
+echo "MySQL is not installed.. going to install"
 dnf install mysql -y
 if [ $? -eq 0 ]
 then 
-echo "Installing mySQL... SUCESSS"
+echo "MySQL is installing ...SUCCESS"
 else
-echo "Installing mySQL... FAILURE"
+echo "mySQL is installing... FAILURE"
 exit 1
 fi
+else
+echo "mySQL is already installed.. No need to do it again"
+fi
+
+
+
+
