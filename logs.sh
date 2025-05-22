@@ -33,7 +33,7 @@ echo "mySQL is not installed... going to install" | tee -a $LOG_FILE
 dnf install mysql -y &>>$LOG_FILE
 VALIDATE $? "mysql"
 else
-echo "mySQL is already installed...." | | tee -a $LOG_FILE
+echo "mySQL is already installed...." |  tee -a $LOG_FILE
 fi
 
 dnf list installed python3 &>>$LOG_FILE
