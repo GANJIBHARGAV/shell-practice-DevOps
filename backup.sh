@@ -8,6 +8,8 @@ LOGS_FOLDER="/var/log/shellscript-logs"
 SCRIPT_FILE=$(echo $0 | cut -d "." -f1)
 LOG_FILE="$LOGS_FOLDER/$SCRIPT_FILE.log"
 
+mkdir -p $LOGS_FOLDER
+
 if [ $USERID -ne 0 ]
 then 
 echo "Error: your not under the root user. Please check"
