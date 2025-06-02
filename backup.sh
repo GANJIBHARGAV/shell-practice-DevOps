@@ -33,14 +33,16 @@ then
 USAGE
 fi
 
-if[! -d $SOURCE_DIR ]
+if[ ! -d $SOURCE_DIR ]
 then 
 echo "No source directory exists.Please check"
+exit 1
 fi
 
 if [ ! -d $DEST_DIR ]
 then
 echo "No destination exists.Please check"
+exit 1s
 fi
 
 
