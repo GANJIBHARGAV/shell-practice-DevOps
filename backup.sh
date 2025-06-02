@@ -33,7 +33,7 @@ then
 USAGE
 fi
 
-if[ ! -d $SOURCE_DIR ]
+if [ ! -d $SOURCE_DIR ]
 then 
 echo "No source directory exists.Please check"
 exit 1
