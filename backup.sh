@@ -42,7 +42,7 @@ fi
 if [ ! -d $DEST_DIR ]
 then
 echo "No destination exists.Please check"
-exit 1s
+exit 1
 fi
 
 
