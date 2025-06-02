@@ -53,6 +53,7 @@ then
 echo "Files to be zipped are:$FILES" 
 else
 echo "No files are available under 14 days"
+fi
 
 
 
