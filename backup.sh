@@ -1,7 +1,7 @@
 #!/bin/bash
 SOURCE_DIR=$1
 DEST_DIR=$2
-DAYS=${3: -14} #  If days it will take that day count otherwise default 14 days
+DAYS="${3: -14}" #  If days it will take that day count otherwise default 14 days
 
 USERID=$(id -u)
 LOGS_FOLDER="/var/log/shellscript-logs"
