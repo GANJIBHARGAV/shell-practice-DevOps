@@ -48,7 +48,7 @@ exit 1
 fi
 
 FILES=$(find $SOURCE_DIR -name "*.log" -mtime +$DAYS)
-if [ ! -z $FILES ]
+if [ -n $FILES ]
 then
 echo "Files to be zipped are:$FILES" 
 else
