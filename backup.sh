@@ -1,7 +1,7 @@
 #!/bin/bash
 SOURCE_DIR=$1
 DEST_DIR=$2
-DAYS="${3: -14}" #  If days it will take that day count otherwise default 14 days
+DAYS=${3: -14} #  If days it will take that day count otherwise default 14 days
 
 USERID=$(id -u)
 LOGS_FOLDER="/var/log/shellscript-logs"
@@ -47,7 +47,7 @@ echo "No destination exists.Please check"
 exit 1
 fi
 
-FILES=$(find $SOURCE_DIR -name "*.log" -mtime +$DAYS)
+FILES=$(find $SOURCE_DIR -name "*.log" -mtime +"$DAYS")
 if [ ! -z $FILES ]
 then
 echo "Files to be zipped are:$FILES" 
