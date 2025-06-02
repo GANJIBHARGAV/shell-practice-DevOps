@@ -53,7 +53,7 @@ then
 echo "Files to be zipped are:$FILES" 
 TIMESTAMP=$(date +%F-%H-%M-%S)
 ZIP_FILEs="$DEST_DIR/apps-logs-$TIMESTAMP.zip"
-echo $FILES | zip -@ $ZIP_FILE
+echo "$FILES" | zip -@ "$ZIP_FILE"
 else
 echo "No files are available under 14 days"
 fi
